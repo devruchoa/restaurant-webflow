@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 12.5rem;
+
+    &__btn1 {
+        background-color: transparent;
+        border: 2px solid $details-color;
+        color: $grey-color;
+        font-size: $font-size-main;
+        padding: 0.5rem;
+        width: 10rem;
+        height: 2.4rem;
+        cursor: pointer;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        &__btn2 {
+            background-color: $details-color;
+            color: $bg-color;
+            font-size: $font-size-main;
+            padding: 0.5rem;
+            width: 10rem;
+            height: 2.4rem;
+            border: none;
+            cursor: pointer;
+        }
+    
+        &__cart {
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+    
+}
