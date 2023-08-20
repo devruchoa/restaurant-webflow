@@ -23,13 +23,17 @@
         align-items: center;
         &__btn2 {
             background-color: $details-color;
-            color: $bg-color;
             font-size: $font-size-main;
             padding: 0.5rem;
             width: 10rem;
             height: 2.4rem;
             border: none;
             cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: $bg-color;
+            }
         }
     
         &__cart {

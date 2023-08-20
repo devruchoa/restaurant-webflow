@@ -4,18 +4,40 @@ import { ReactComponent as Insta } from '../../../assets/icons/Insta.svg';
 import { ReactComponent as Fb } from '../../../assets/icons/Fb.svg';
 import { ReactComponent as Twiter } from '../../../assets/icons/Twiter.svg';
 import { ReactComponent as Pintrest } from '../../../assets/icons/Pintrest.svg';
+import { Link } from 'react-router-dom';
 
 export default function Menu() {
+    const routes = [{
+        label: 'Home',
+        to: '/'
+    }, {
+        label: 'Sobre',
+        to: '/sobre'
+    }, {
+        label: 'Menu',
+        to:'/menu'
+    }, {
+        label: 'Reserva',
+        to: '/reserva'
+    }, {
+        label: 'Galeria',
+        to: '/galeria'
+    }, {
+        label: 'Blog',
+        to: '/blog'
+    }, {
+        label: 'Contato',
+        to: '/contato'
+    }];
+
     return (
         <nav className={styles.menu}>
             <ul className={styles.menu__navbar}>
-                <li className={styles.menu__navbar__item}>Home</li>
-                <li className={styles.menu__navbar__item}>Sobre</li>
-                <li className={styles.menu__navbar__item}>Menu</li>
-                <li className={styles.menu__navbar__item}>Reserva</li>
-                <li className={styles.menu__navbar__item}>Galeria</li>
-                <li className={styles.menu__navbar__item}>Blog</li>
-                <li className={styles.menu__navbar__item}>Contato</li>
+                {routes.map((route, index) => (
+                    <li key={index} className={styles.menu__navbar__item}>
+                        <Link to={route.to}>{route.label}</Link>
+                    </li>
+                ))}
             </ul>
 
             <div className={styles.menu__icons}>

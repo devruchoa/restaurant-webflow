@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+.container {
+    color: #fff;
+    display: flex;
+    gap: 7rem;
+    padding: 0 12.5rem;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 8rem 0;
+        gap: 1rem;
+
+        h2 {
+            font-family: $font-secondary;
+            font-weight: 700;
+            font-size: 4.25rem;
+            line-height: 66.1%;
+            margin: 0;
+        }
+
+        p {
+            color: $text-color;
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid $details-color;
+            color: $grey-color;
+            font-size: $font-size-main;
+            padding: 0.5rem;
+            width: 10rem;
+            height: 2.4rem;
+            cursor: pointer;
+        }
+    }
+
+    &__image {
+        height: 620px;
+        margin: 1.5rem 0;
+    }
+}

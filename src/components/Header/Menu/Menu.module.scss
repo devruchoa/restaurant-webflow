@@ -1,7 +1,6 @@
 @import '../../../styles/variables';
 
 .menu {
-    color: $grey-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,6 +17,12 @@
         &__item {
             cursor: pointer;
             margin-right: 2.5rem;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+                color: $grey-color;
+            }
         }
     }
 
